@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import VolumeMeter from './VolumeMeter';
+import './App.css'
 
 function App() {
   const [devices, setDevices] = useState([]);
@@ -108,6 +109,17 @@ function App() {
       </div>
       <div style={{ marginTop: '20px' }}>
         {analyser ? <VolumeMeter analyser={analyser} /> : <p>Loading audio...</p>}
+        <div className="parentIframeContainer">
+          <iframe style={{
+            border: 'none',
+            overflow: 'hidden',
+            width: '100%',
+            height: '360px'
+          }}
+          src="https://www.metercustom.net/plugin"
+          title="Meter Custom Plugin"
+          ></iframe>
+        </div>
       </div>
     </div>
   );

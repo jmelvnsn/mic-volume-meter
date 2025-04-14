@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -26,6 +27,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.parentIframeContainer {
+  width: 350px;
+  margin-top: 20px;
+  display: block;
 }
 
 @keyframes App-logo-spin {
